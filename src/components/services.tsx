@@ -17,8 +17,12 @@ const services: Service[] = [
       "Perfect for parties, weddings, and events—delicious food in large quantities.",
   },
   {
-    title: "Special Orders",
-    description: "Custom meals prepared just the way you like them.",
+    title: "Weekly Meal Preps",
+    description: "We prepare customized weekly meal plans with delicious and healthy dishes, saving you time and helping you eat better every day.",
+  },
+  {
+    title: "Picnic & Outdoor Services",
+    description: "Enjoy fresh, ready-to-serve meals delivered to your picnic or outdoor event, so you can focus on making memories while we handle the food"
   },
   {
     title: "Corporate Lunches",

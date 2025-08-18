@@ -25,15 +25,24 @@ function ProductList() {
 
   return (
     <>
-      <h3>Product List</h3>
-      {products.map((product, index) => (
-        <div className="product-card" key={index}>
-          <img src={product.image} alt={product.name} className="product-img" />
-          <h2>{product.name}</h2>
-          <p>{product.description}</p>
-          <p className="price">KSh {product.price}</p>
-        </div>
-      ))}
+      <h3 className="product-title">Product List</h3>
+      <div className="container">
+        {products.map((product, index) => (
+          <div className="card" style={{ width: "18rem", height: "30rem" }} key={index}>
+            <img src={product.image} className="card-img-top" alt={product.name}/>
+            <div className="card-body">
+              <h5 className="card-title">{product.name}</h5>
+              <p className="card-text">
+                {product.description}
+              </p>
+              <h3>{product.price}</h3>
+              <a href="#" className="btn btn-primary">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
