@@ -5,9 +5,9 @@ function HomePage() {
   return (
     <div className="homepage-wrapper">
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-black shadow-sm w-100">
+      <nav className="navbar navbar-expand-lg navbar-light bg-yellow shadow-sm w-100">
         <div className="container-fluid">
-          <div className="logo">DNF</div>
+          
           <button
             className="navbar-toggler"
             type="button"
