@@ -12,9 +12,11 @@ type Product = {
 function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/")
+      .get(`${apiUrl}/products/`)
       .then((response) => {
         setProducts(response.data);
       })
