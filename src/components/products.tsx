@@ -12,7 +12,7 @@ type Product = {
 function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
 
-  const apiUrl = process.env.REACT_APP_API_URL;
+  // const apiUrl = process.env.REACT_APP_API_URL;
 
   // `${apiUrl}/product/`
 
