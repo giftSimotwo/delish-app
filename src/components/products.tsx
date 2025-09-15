@@ -12,13 +12,12 @@ type Product = {
 function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
 
-  // const apiUrl = process.env.REACT_APP_API_URL;
-
-  // `${apiUrl}/product/`
+  const apiUrl = import.meta.env.VITE_API_URL; 
 
   useEffect(() => {
+    console.log("Fetching from:", `${apiUrl}/product/`);
     axios
-      .get("https://delishgin.onrender.com/product/")
+      .get(`${apiUrl}/product/`)
       .then((response) => {
         setProducts(response.data);
       })
