@@ -22,6 +22,7 @@ function ProductList() {
       })
       .catch((error) => {
         console.error("Error occured while fetching data", error);
+        setProducts([]);
       });
   }, []);
 

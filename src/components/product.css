@@ -17,6 +17,18 @@
 
 .card {
   margin: 7px;
+
+  @media screen and (max-width=480px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
 }
 
 .card:hover {
