@@ -14,9 +14,11 @@ function ProductList() {
 
   const apiUrl = process.env.REACT_APP_API_URL;
 
+  // `${apiUrl}/product/`
+
   useEffect(() => {
     axios
-      .get(`${apiUrl}/product/`)
+      .get("https://delishgin.onrender.com/product/")
       .then((response) => {
         setProducts(response.data);
       })
