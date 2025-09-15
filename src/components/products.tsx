@@ -15,7 +15,6 @@ function ProductList() {
   const apiUrl = import.meta.env.VITE_API_URL; 
 
   useEffect(() => {
-    console.log("Fetching from:", `${apiUrl}/product/`);
     axios
       .get(`${apiUrl}/product/`)
       .then((response) => {
