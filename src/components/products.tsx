@@ -16,7 +16,7 @@ function ProductList() {
 
   useEffect(() => {
     axios
-      .get(`${apiUrl}/products/`)
+      .get(`${apiUrl}/product/`)
       .then((response) => {
         setProducts(response.data);
       })
