@@ -6,14 +6,24 @@ import HomePage from "./components/home";
 
 function App() {
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        flexDirection: "row",
+        minHeight: "100vh",
+        margin: 0,
+        padding: 0
+      }}
+    >
       <Routes>
-        <Route path="" element={<HomePage/>}></Route>
-        <Route path="product" element={<ProductList/>}></Route>
-        <Route path="service" element={<Service/>}></Route>
-        <Route path="about" element={<About/>}></Route>
+        <Route path="" element={<HomePage />}></Route>
+        <Route path="product" element={<ProductList />}></Route>
+        <Route path="service" element={<Service />}></Route>
+        <Route path="about" element={<About />}></Route>
       </Routes>
-    </>
+    </div>
   );
 }
 
